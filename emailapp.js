@@ -8,18 +8,29 @@
                 $(".g-signin2").css("display","none");
                 $(".success").css("display","block");
                 $(".profiledetails").css("display","none");
-                $(".addressbook").css("display","none");
+                $(".addressbook").css("display", "none");
+                $(".aboutUs").css("display", "none");
 
-                name=profile.getName();
-                imgurl = profile.getImageUrl();
-                email = profile.getEmail();
+                    name=profile.getName();
+                    imgurl = profile.getImageUrl();
+                    email = profile.getEmail();
         };
 
+        function aboutUs() {
+            $(".g-signin2").css("display", "none");
+            $(".success").css("display", "none");
+            $(".profiledetails").css("display", "none");
+            $(".addressbook").css("display", "none");
+            $(".aboutUs").css("display", "block");
+
+        };
+        
         function ProfileDetails(){
           $(".g-signin2").css("display","none");
           $(".success").css("display","none");
           $(".profiledetails").css("display","block");
-          $(".addressbook").css("display","none");
+            $(".addressbook").css("display", "none");
+            $(".aboutUs").css("display", "none");
 
           $("#name").text(name);
           $("#pic").attr('src',imgurl);
@@ -30,7 +41,8 @@
           $(".g-signin2").css("display","none");
           $(".success").css("display","none");
           $(".profiledetails").css("display","none");
-          $(".addressbook").css("display","block");
+            $(".addressbook").css("display", "block");
+            $(".aboutUs").css("display", "none");
 
         };
 
@@ -39,7 +51,8 @@
           $(".g-signin2").css("display","none");
           $(".success").css("display","block");
           $(".profiledetails").css("display","none");
-          $(".addressbook").css("display","none");
+            $(".addressbook").css("display", "none");
+            $(".aboutUs").css("display", "none");
 
         };
 

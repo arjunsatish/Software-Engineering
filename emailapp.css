@@ -1,70 +1,107 @@
- .g-signin2 {
-            margin-left: 45%;
-            margin-top: 20%;
-        }
+.g-signin2 {
+    margin-left: 45%;
+    margin-top: 20%;
+}
 
-        .success {
-            display: none;
-            padding: 15px 32px;
-            text-align: center;
-            font-size: 20px;
-        }
+.success {
+    display: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+}
 
-        a{
-            cursor:pointer;
-        }
+.success ul {
+    background-color: lightgrey;
+}
 
-        .jumbotron{
-            margin-bottom:0px ; !important
-        }
+a {
+    cursor: pointer;
+}
 
-        .profiledetails {
-            display: none;
-            color: #c94c4c;
-            padding: 15px 32px;
-            text-align: center;
-            font-size: 20px;
-        }
+.jumbotron {
+    margin-bottom: 0px;
+}
 
-        .addressbook {
-            display: none;
-            color: #c94c4c;
-            padding: 15px 32px;
-            text-align: center;
-            font-size: 20px;
-        }
+.profiledetails {
+    display: none;
+    color: #c94c4c;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+}
 
-        .g-sign{
-            width:500%;
-            height:500%;
-        }
+/*.profile {
+    float: left;
+    margin-top: 3%;
+    padding-top: 5px;
+}*/
 
-        .success button {
-            background-color: #c94c4c;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-        }
+.addressbook {
+    display: none;
+    color: #c94c4c;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+}
 
-        .profiledetails button {
-            background-color: #c94c4c;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            display: inline-block;
-            font-size: 16px;
-        }
 
-        .addressbook button {
-            background-color: #c94c4c;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            display: inline-block;
-            font-size: 16px;
-        }
+
+.aboutUs {
+    display: none;
+    color: #c94c4c;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.g-sign {
+    width: 500%;
+    height: 500%;
+}
+
+.success button {
+    background-color: #c94c4c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.aboutUs {
+    display: none;
+}
+
+.profiledetails button {
+    background-color: #c94c4c;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.aboutUs button {
+    background-color: #c94c4c;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.addressbook button {
+    background-color: #c94c4c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+.signout{
+    margin-top: 3%;
+}
