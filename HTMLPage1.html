@@ -1,0 +1,136 @@
+﻿<!--READ ME :: !! !! !! :D => —>
+<!--UI guys play around with the UI and layouts but DO NOT change the basic structure. Only then can we add the address book stuff later.-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- headers -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <meta charset="UTF-8"
+    <meta name="google-signin-client_id" content="685211505013-3ec79sm12325gq50jeaq66bl22bo5vjc.apps.googleusercontent.com">
+
+    <title>EmailSE</title>
+    <link rel="shortcut icon" href="email.ico" />
+    <link rel="stylesheet" href="emailapp.css" />
+    <script src="emailapp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper fade-in">
+        <div class="jumbotron jumbotron-fluid bginfo text-white text-center">
+            <div class="container-fluid">
+                <h1 class="display-1">E-mail Application System</h1>
+                <p class="lead"> Your e-mail, our priority</p>
+            </div>
+        </div>
+
+
+        <div class="success" id="success">
+            <ul class="nav flex-column nav-pills">
+                <li class="nav-item col-12-sm col-12-md col-12-lg col-12-xs" id="navid1">
+                    <a class="navlink active big" onclick="ProfileDetails()">Profile Details</a>
+                </li>
+                <li class="nav-item col-12-sm col-12-md col-12-lg col-12-xs" id="navid2">
+                    <a class="nav-link big" onclick="AddressBook()">Address Book</a>
+                </li>
+                <li class="nav-item col-12-sm col-12-md col-12-lg col-12-xs" id="navid3">
+                    <a class="nav-link big" onclick="aboutUs()">Meet The Team</a>
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="g-signin2 g-sign" data-onsuccess="onSignIn">
+            <h1>Testing 123</h1>
+        </div>
+
+        <div class="profiledetails">
+            <a onclick="gohome()">Home</a>
+            <p class="alert alert-danger profile">Profile details:</p>
+            <img id="pic" class="img-circle" width="100" height="100">
+            <p id="name"></p>
+            <p>
+                Email:&nbsp;<text id="email"></text>
+            </p>
+        </div>
+        <div class="aboutUs">
+            <a onclick="gohome()">Home</a>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="akshay.jpg" alt="AKSHAY" style="width:100%">
+                        <div class="container">
+                            <h2>Akshay K</h2>
+                            <p class="title">CB.EN.U4CSE15002</p>
+                            <a href="mailto:akshayoct13@gmail.com">CONTACT ME</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="arjun.jpg" alt="ARJUN" style="width:100%">
+                        <div class="container">
+                            <h2>Arjun Satish</h2>
+                            <p class="title">CB.EN.U4U4CSE15006</p>
+                            <a href="mailto:arjunsatish97@gmail.com">CONTACT ME</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="praneet.jpg" alt="PRANEET" style="width:100%">
+                        <div class="container">
+                            <h2>Praneet Reddy</h2>
+                            <p class="title">CB.EN.U4U4CSE15037</p>
+                            <a href="mailto:kjpraneet@gmail.com">CONTACT ME</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="prithvi.jpg" alt="PRITHVI" style="width:100%">
+                        <div class="container">
+                            <h2>Prithvi Shah</h2>
+                            <p class="title">CB.EN.U4CSE15039</p>
+                            <a href="mailto:itspritvi.14@gmail.com">CONTACT ME</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="gopalk.jpg" alt="GOPAL" style="width:100%">
+                        <div class="container">
+                            <h2>Gopalakrishnan C</h2>
+                            <p class="title">CB.EN.U4CSE15060</p>
+                            <a href="mailto:nitinchella@gmail.com">CONTACT ME</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="addressbook">
+            <a onclick="gohome()">Home</a>
+            <p class="alert alert-danger">Address Book:</p>
+        </div>
+        <form class="button-app">
+            <button onclick="signOut()" class="signout">SignOut</button>
+        </form>
+    </div>
+</body>
+</html>
+
